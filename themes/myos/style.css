@@ -1,0 +1,11 @@
+.site-wrapper {
+    width:100%;
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+}
+
+.site {
+    width: 1440px;
+    background-color: rgb(255,255,255);
+
+}
