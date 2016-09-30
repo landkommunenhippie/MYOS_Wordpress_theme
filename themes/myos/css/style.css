@@ -1,0 +1,645 @@
+@font-face{
+    font-family: "WorkSans";
+    src: url('Work_Sans/WorkSans-Regular.ttf'); 
+
+}
+@font-face{
+    font-family: "WorkSans-Bold";
+    src:  url('Work_Sans/WorkSans-Bold.ttf');
+}
+@font-face{
+    font-family: "WorkSans-SemiBold";
+    src: url('Work_Sans/WorkSans-SemiBold.ttf');
+}
+
+body{
+    
+    font-family: WorkSans;
+    color: #333333;
+    
+}
+
+.container-fluid{
+    background-color: white;
+   
+    padding: 0;
+}
+
+.container-fluid > div{
+    max-width: 1150px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 120px;
+   /* padding-top: 100px; */
+
+}
+
+.regular-link{
+    letter-spacing: 1px;
+    font-family: "WorkSans";
+}
+
+.container-fluid > div:last-child{
+    padding-bottom: 0px;
+    
+}
+
+.container-fluid > div + .noisey{
+    padding-top:80px;
+}
+.container-fluid > div.noisey + .noisey{
+    padding-top:40px;
+}
+
+.container-fluid > div.noisey + div{
+    padding-top:125px;
+}
+
+.bold{
+    font-family: WorkSans-Bold;
+}
+.semi-bold{
+    font-family: WorkSans-SemiBold;
+}
+
+.teaser{
+    max-width:700px;
+    margin: 0 auto 120px auto;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+
+.subteaser{
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.btn-myos-transparent{
+    background-color:transparent ;
+    border-color: #444;
+    border-radius: 0;
+    border-width: 2px;
+    color: #444;
+    text-transform: uppercase;
+    font-family: WorkSans-SemiBold;
+    padding:20px 0px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 200px; height: 60px;
+    line-height: 19px;
+}
+.btn-myos-transparent:hover{
+    background-color: #333;
+    color: #FFF;
+}
+
+
+/**
+* ---- Main Navigation ---
+*/
+.main-nav{
+    margin-top:80px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 83px;
+
+    min-height:120px;
+    padding-top: 95px;
+    background-color: white;
+    border: none;
+    font-size:14px;
+    font-weight:bold;
+    max-width: 1150px;
+    z-index:100;
+    letter-spacing: 1.5px;
+    line-height: 16px;
+}
+.navbar .navbar-nav > li > a{
+    color: #333;
+}
+
+.navbar .navbar-nav > li > a:hover{
+    background: transparent;
+}
+.navbar-brand {
+  float: none;
+  padding: 0;  
+  }
+
+.navbar-center
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    height:100%;
+
+}
+.brand{
+width: 255px;
+margin: auto;
+}
+.brand > img{
+    width:100%;
+}
+
+.heading{
+    margin-bottom: 80px;
+    text-align:center;
+    overflow:hidden;
+}
+.heading > img{
+    max-width: 400px;
+}
+
+.btn-myos-center{
+    text-align:center;
+    margin-top:90px;
+}
+
+.fixed-nav{
+    position: fixed;
+    max-height:145px;
+    margin-top:0px;
+    max-width: 100% !important;
+    width:100%;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    display: none;
+    background-color: #FFF; 
+    z-index: 150;
+}
+
+.navbar-fixed-top{
+    max-width: 1150px;
+    margin: auto;
+    padding:15px;
+
+}
+
+.navbar-collapse > ul > li > a:focus{
+    background: transparent;
+}
+
+/**
+* ---- Image Slider ---
+*/
+.slider-wrapper{
+   
+   max-height:600px;
+    margin-bottom: 100px;
+}
+.image-slider{
+    height:530px;
+}
+
+.slider-heading{
+    font-size:50px;
+    margin-bottom:35px;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+ #myos-carousel .carousel-indicators{
+    position: relative;
+    margin: 50px auto;
+    left:0;
+    
+ }
+ .carousel-indicators li{
+    width:auto !IMPORTANT;
+    border: none;
+    border-radius: inherit;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 25px;
+    text-indent: 0;
+ }
+.carousel-indicators .active{
+    width:auto !IMPORTANT;
+    margin-right: 25px;
+    border-bottom: solid;
+    padding-bottom: 16px;
+}
+
+
+ .carousel-indicators li .caption {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    line-height: 16px;
+    
+}
+
+.btn-myos-black{
+    background-color: #444;
+    border-radius: 0;
+    color: white;
+    font-family: "WorkSans-SemiBold";
+    text-transform: uppercase;
+    padding:20px 0px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 19px;
+    width:200px;
+    height:60px;
+}
+
+.btn-myos-black:hover{
+    background-color: #FFF;
+    color: #333;
+    opacity: 1;
+}
+
+.carousel-caption{
+    margin: auto;
+    bottom: 130px;
+    padding-bottom: 0;
+    max-width: 625px;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/**
+    ------------------ About us ------------------
+*/
+.container-fluid > .noisey{
+    background-image: url('../images/noisey.png');
+    background-repeat: repeat;
+    overflow:hidden;
+    max-width: 100%;
+    background-size:500px;
+}
+
+
+.myos-profile{
+    max-width: 900px;
+    margin:0 auto 50px auto;
+    overflow:hidden;
+    
+}
+
+.profile-heading{
+    font-size: 40px;
+    letter-spacing: 0.9px;
+
+}
+
+.profile-heading + p {
+    letter-spacing: 0.1px;
+    line-height: 20px;
+}
+
+.profile-picture{
+    max-height: 100%;
+}
+
+.upright{
+    height:490px;
+}
+
+.myos-profile > .row > div{
+    padding: 0;
+}
+
+.myos-profile .profile-description{
+    max-width:380px;
+}
+
+
+.myos-profile > .row:nth-child(odd){
+    width:910px;
+}
+
+.myos-profile > .row:nth-child(even){
+    width:910px;
+}
+
+.myos-profile > .row:nth-child(even) > .upright{
+    margin-top:-90px;
+    padding-left:70px;
+}
+
+.profile-description.right{
+    padding-top: 100px!IMPORTANT;
+    padding-left: 75!IMPORTANT;
+    
+}
+
+.profile-description.left{
+    padding-top: 150px !IMPORTANT;
+    margin-left:75px;
+}
+.profile-description.right > h2{
+    margin-bottom:20px;
+}
+.profile-description .instagram{
+    margin-top:20px;
+}
+
+.instagram > a{
+    color: #333;
+    text-decoration: underline;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+.myos-profile .profile-picture.right{
+    float:right;
+    margin-right: 150px;
+}
+.profile-picture.landscape{
+    max-width:300px;
+    height:auto;
+
+}
+.profile-picture.landscape + .profile-description{
+    padding-top: 50px;
+}
+.profile-picture.right + .profile-description{
+    margin-right:480px;
+}
+
+/**
+-------------- image Grid ---------------------
+*/
+
+.grid{
+    max-width:950px;
+    margin:0 auto 50px auto;
+
+}
+.grid img{
+vertical-align: top;
+}
+
+img-responsive {
+  margin-bottom: 0px;
+  vertical-align: top;
+}
+.grid-custom .col-sm-6,
+.grid-custom .col-xs-6,
+.grid-custom .col-xs-12,
+.grid-custom .col-sm-3 {
+    padding:5px;
+      }
+.img-responsive{
+    width:100%;
+}
+.first-block{
+	border-bottom: 5px #000 solid;
+}
+
+.gallery-grid{
+    max-width: 1150px;
+    margin: auto;
+}
+
+.gallery-item{
+    max-width:360px;
+    float: left;
+    padding: 7px;
+}
+
+.gallery-item--width2{
+    max-width:720px;
+}
+/**
+---------------------- WS ---------------------
+*/
+
+.offer{
+    max-width:380px;
+    border: 2px solid #333333;
+    background-color: #FEFC55;
+    text-align:center;
+   
+}
+
+.offer > h3{
+    
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    line-height: 38px;
+    font-size: 30px;
+    max-width: 250px;
+    margin:90px auto 0 auto;
+}
+
+.offer > .offer-description{
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 30px;
+    max-width: 290px;
+    margin: 0 auto 60px auto;
+}
+
+.offer > .btn{
+    margin-bottom: 75px;
+}
+
+.hardfacts{
+    font-size: 14px;
+    max-width: 80px;
+    margin: 0 auto 25px auto;
+}
+
+.hardfacts .surface{
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    line-height: 30px;
+    border-bottom: solid 3px #333333;
+}
+
+.hardfacts .time{
+    letter-spacing: 0.5px;
+    line-height: 38px;
+    
+}
+
+.hardfacts .time .number{
+    font-size: 24px;
+}
+
+.offer + .ws-description{
+    padding-left:55px;
+}
+
+.ws-description > .description {
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+}
+
+.ws-description > .description > ul{
+    padding-top:20px;
+    padding-left: 14px;
+    margin-bottom: 30px;
+}
+.ws-description > .subteaser{
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 26px;
+    padding-top: 45px;
+    margin-bottom: 30px;
+}
+
+.ws > .grid > .row:nth-child(even) .offer{
+    background-color: #B6F2E3;
+}
+
+.ws > .grid > .row:nth-child(even) .ws-description{
+    padding-right: 55px;
+}
+
+.ws > .grid > .row{
+    margin-bottom: 55px;
+}
+.ws-offer-divider{
+    width: 100%;
+    margin-bottom: 55px;
+    padding-left:405px;
+}
+
+.ws-offer-divider > img{
+    width:68px;
+}
+/**
+* GET in TOUCH
+*/
+.container-fluid > .spacey{
+    background-image: url('../images/background_space.png');
+    background-repeat: repeat;
+    overflow:hidden;
+    max-width: 100%;
+    background-size:800px;
+    color: #FFF;
+}
+
+.contact-box{
+    max-width:730px;
+    margin:160px auto 0 auto;
+    background-color: #FFF;
+    color: #333;
+    padding-top:65px;
+    padding-bottom: 50px;
+    text-align: center;
+    position: relative;
+
+}
+
+.contact-badge{
+    max-width: 315px;
+    position: absolute;
+    left:-120px;
+    top: -80px;
+}
+.contact-badge > img{
+    width: 100%;
+}
+
+.heading-text{
+    text-transform: uppercase;
+    line-height: 38px;
+    letter-spacing: 1.1px;
+    margin-bottom: 35px;
+}
+
+.contact-form > .form-group{
+    max-width: 465px;
+    margin: 0 auto 35px auto;
+}
+
+.bordered{
+    border: none;
+    box-shadow: none;
+    transition: none;
+    border-radius: 0px;
+}
+
+.bottom-bordered{
+    border-bottom: solid 1px;
+}
+
+.whole-bordered{
+    border: solid 1px;
+}
+
+.contact-form > .form-group > input   {
+    width: 220px;
+    margin: 0px 10px 0 0;
+    padding: 0;
+}
+
+.contact-form > .form-group > input:focus, .contact-form > .form-group > textarea:focus{
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    border-color: rgba(51, 51, 51, 0.5)
+}
+
+.contact-form > .form-group > input, .contact-form > .form-group > textarea{
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    max-height: 320px;
+    resize: none;
+
+}
+
+.contact-form > .form-group  input:nth-child(even)   {
+    margin: 0px 0 0px 10px;
+    
+}
+
+.form-control::-moz-placeholder{
+    color:#333;
+    opacity: 0.5;
+    text-transform: uppercase;
+    
+}
+
+.address{
+    max-width: 730px;
+    margin: 95px auto 0;
+    text-align: center;
+    font-size: 20px;
+    left: 0.2px;
+    line-height: 24px;
+}
+
+/*
+FOOTER
+*/
+.footer{
+    margin: 95px auto 0;
+    max-width: 1000px;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    text-shadow:  0px 2px 4px rgb(0,0,69);
+}
