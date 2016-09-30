@@ -51,7 +51,6 @@
 	$pagesWithoutListTags = strip_tags($pages, '<a>');
 	$pageArr = preg_split("/\n/",$pagesWithoutListTags, -1 ,PREG_SPLIT_NO_EMPTY);
 	array_push($pageArr,'<a href="#">BOOK NOW</a>');
-	//var_dump($pageArr);
 	
 	/*
 	Split Nav Items with Meridian
@@ -65,6 +64,35 @@
 
 ?>
 			
+
+
+		<div class="fixed-nav" id="fixed-nav">
+            <div class="navbar navbar-fixed-top bold">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <div class="navbar-center navbar-brand" href="#">
+                    <div class="brand"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Logo_MYOS_small.png"></div>
+                </div>
+                    <ul class="nav navbar-nav navbar-left">
+						<?php 
+						foreach($leftSideNavItems as $navItem){
+							echo "<li>".$navItem.'</li>';
+						}
+						?>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<?php 
+						foreach($rightSideNavItems as $navItem){
+							echo "<li>".$navItem.'</li>';
+						}
+						?>
+						<li><a>|</a></li>
+						<li><a class="regular-link" href="#">#MYOS</a></li>
+						<li><a class="regular-link" href="#">f</a></li>
+					</ul>
+				 </div>
+            </div>
+        </div>
+
 
 			<nav id="main-nav" class="navbar navbar-default  main-nav bold" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
