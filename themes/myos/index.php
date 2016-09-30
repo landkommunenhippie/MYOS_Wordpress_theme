@@ -13,13 +13,10 @@
  * @subpackage myos
  * @since myos 1.0
  */
-
 get_header(); ?>
+	
+	
 
-	<div id="content" class="site-content">
-	
-	<?php echo get_bloginfo('template_url'); ?>/style.css
-	
 	<?php
 	// Start the loop.
 	while ( have_posts() ) : the_post();
@@ -31,16 +28,22 @@ get_header(); ?>
 		 */
 	?>
 		 
-		<h2><?php the_title(); ?></h2>
 		<?php 
-			the_content(); 
-			echo get_post_format();// get_template_part( 'content', get_post_format() );
+			if (locate_template('page-templates/page-' . the_title('','',false) . '.php') != '') {
+				
+				get_template_part('page-templates/page', the_title('','',false));
+			} else {
+				// nope, load the content
+				the_content();
+			}	
+			//the_content(); 
+			//echo get_post_format();// get_template_part( 'content', get_post_format() );
 	
 		?>
-	
+
+		</div>
 	<?php
 	// End the loop.
 	endwhile; ?>
 
-	</div>
 <?php get_footer(); ?>
