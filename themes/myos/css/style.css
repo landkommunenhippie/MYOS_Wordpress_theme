@@ -118,6 +118,7 @@ body{
 }
 .navbar .navbar-nav > li > a{
     color: #333;
+    text-transform:uppercase;
 }
 
 .navbar .navbar-nav > li > a:hover{
