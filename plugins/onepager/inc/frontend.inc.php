@@ -25,14 +25,20 @@ add_filter('template_include', __NAMESPACE__.'\frm_get_onepager_template', 99);
 
 
 function frm_get_onepager_link($url, $id) {
+	
 	$ancestors = get_post_ancestors($id);
-	$parent = $ancestors[0];
+	$parent = get_post($id);
+	if(sizeOf($ancestors) > 0){
+		$parent = $ancestors[0];
+		}
+		
 	$parentIsOnepager = get_post_meta($parent, "zdIsOnepager", TRUE);
 	if ($parentIsOnepager) {
 		return get_permalink($parent)."#".get_post($id)->post_name;
 	} else {
 		return $url;
 	}
+	
 }
 add_filter('page_link', __NAMESPACE__.'\frm_get_onepager_link', 10, 2);
 
