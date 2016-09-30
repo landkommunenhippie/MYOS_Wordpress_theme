@@ -128,7 +128,6 @@ h4{
 }
 .navbar .navbar-nav > li > a{
     color: #333;
-    text-transform:uppercase;
 }
 
 .navbar .navbar-nav > li > a:hover{
@@ -153,6 +152,10 @@ h4{
 .brand{
 width: 255px;
 margin: auto;
+}
+.small-brand{
+    width: 190px;
+    margin: auto;
 }
 .brand > img{
     width:100%;
@@ -184,13 +187,19 @@ margin: auto;
     display: none;
     background-color: #FFF; 
     z-index: 150;
+	padding-bottom:120px !IMPORTANT;
 }
 
 .navbar-fixed-top{
     max-width: 1150px;
     margin: auto;
     padding:15px;
+	margin-top:20px;
 
+}
+
+.navbar{
+    text-transform: uppercase;
 }
 
 .navbar-collapse > ul > li > a:focus{

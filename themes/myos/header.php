@@ -70,7 +70,7 @@
             <div class="navbar navbar-fixed-top bold">
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <div class="navbar-center navbar-brand" href="#">
-                    <div class="brand"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Logo_MYOS_small.png"></div>
+                    <div class="brand small-brand"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Logo_MYOS_small.png"></div>
                 </div>
                     <ul class="nav navbar-nav navbar-left">
 						<?php 
