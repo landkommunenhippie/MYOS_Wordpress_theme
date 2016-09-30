@@ -8,7 +8,7 @@ Template Name: about
 		
 		<div class="heading">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Headline_about.png" alt="about" />
-            </div>
+        </div>
             
 		<?php 
 			the_content(); 
