@@ -50,6 +50,7 @@
 	);
 	$pagesWithoutListTags = strip_tags($pages, '<a>');
 	$pageArr = preg_split("/\n/",$pagesWithoutListTags, -1 ,PREG_SPLIT_NO_EMPTY);
+	array_push($pageArr,'<a href="#">BOOK NOW</a>');
 	//var_dump($pageArr);
 	
 	/*
