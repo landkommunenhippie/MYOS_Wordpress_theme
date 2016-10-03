@@ -30,7 +30,6 @@ Template Name: about
 						//var_dump($myos_profile->fields);
 						$imageIsLeft = filter_var($myos_profile->fields['picture-is-left'], FILTER_VALIDATE_BOOLEAN);
 						$profileName = $myos_profile->fields['about-name'];
-						$profileVita = $myos_profile->fields['about-myos-profile-vita'];
 						$profileImageLoc = $myos_profile->fields['about-profile-picture'];
 						$instagramURL = $myos_profile->fields['instagram-url'];
 					?>
@@ -44,7 +43,7 @@ Template Name: about
 					</div>
 					 <div class="profile-description right col-sm-6">
                         <div class="profile-heading semi-bold"><?php echo $profileName ?></div>
-                        <p class="semi-bold"><?php echo $profileVita; ?></p>
+                        <p class="semi-bold"><?php echo $myos_profile->post_content; ?></p>
                         <p class="instagram"><a href="<?php echo $instagramURL ?>" target="_blank">Instagram</a></p>
                     </div>
                     
@@ -53,7 +52,7 @@ Template Name: about
 				 
 				     <div class="profile-description left col-sm-6">
                         <div class="profile-heading semi-bold"><?php echo $profileName ?></div>
-                        <p class="semi-bold"><?php echo $profileVita; ?></p>
+                        <p class="semi-bold"><?php echo $myos_profile->post_content; ?></p>
                         <p class="instagram"><a href="<?php echo $instagramURL ?>" target="_blank">Instagram</a></p>
                     </div>
 					<div class="col-sm-6 upright">
