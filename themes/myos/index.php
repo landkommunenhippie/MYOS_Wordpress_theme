@@ -36,6 +36,7 @@ get_header(); ?>
 				// nope, load the content
 				the_content();
 			}	
+			
 			//the_content(); 
 			//echo get_post_format();// get_template_part( 'content', get_post_format() );
 	
