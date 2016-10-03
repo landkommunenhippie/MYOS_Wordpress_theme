@@ -15,7 +15,7 @@ function frm_get_onepager_template($template) {
 	*/
 	
 	if ($isOnepager) {
-		$template = locate_template(array('index.php'));
+		$template = locate_template(array('home.php'));
 	}
 
 	return $template;

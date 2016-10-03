@@ -29,8 +29,17 @@ get_header(); ?>
 	?>
 		 
 		<?php 
-		
+			if (locate_template('page-templates/page-' . the_title('','',false) . '.php') != '') {
+				
+				get_template_part('page-templates/page', the_title('','',false));
+			} else {
+				// nope, load the content
 				the_content();
+			}	
+			
+			//the_content(); 
+			//echo get_post_format();// get_template_part( 'content', get_post_format() );
+	
 		?>
 
 		
