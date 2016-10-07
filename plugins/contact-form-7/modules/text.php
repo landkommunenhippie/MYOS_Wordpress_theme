@@ -88,7 +88,7 @@ function wpcf7_text_shortcode_handler( $tag ) {
 	$atts = wpcf7_format_atts( $atts );
 
 	$html = sprintf(
-		'<input placeholder="%1$s"  %2$s />%3$s',
+		'<input %2$s />%3$s',
 		sanitize_html_class( $tag->name ), $atts, $validation_error );
 
 	return $html;
