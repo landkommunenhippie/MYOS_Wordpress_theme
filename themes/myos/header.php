@@ -27,25 +27,18 @@
 
 <body>
 	<div class="container-fluid">
-        
-        <!--<div class="fixed-nav" id="fixed-nav">
-            <div class="navbar navbar-fixed-top bold">
-                <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                    <div class="navbar-center navbar-brand" href="#">
-                    <div class="brand"><img src="<?php bloginfo('template_directory'); ?>/images/Logo_MYOS_small.png"></div>
-				</div>
-				<ul class="nav navbar-nav navbar-left">-->
-
-	
+     
 <?php
 	/*
 	GET all SubPageItems With a-Tag
-	*/					
+	*/
+	$newsPage = get_page_by_title( 'news' );					
 	$pages = wp_list_pages(array(
 		'echo' => 0, 
 		'child_of' => get_option('page_on_front'), 
 		'title_li' => null,
-		'sort-column' => 'menu_order' 
+		'sort-column' => 'menu_order',
+		'exclude' => $newsPage->ID
 		)
 	);
 	$pagesWithoutListTags = strip_tags($pages, '<a>');
