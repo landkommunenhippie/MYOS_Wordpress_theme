@@ -29,30 +29,36 @@ Template Name: contact
         ?> 
 
     </div>
-    <div class="address semi-bold">
     <?php 
         $args = array(
-            'post_type' => 'page'
+            'post_type' => 'myos-contact-page'
 			);
 			
 			$loop = new WP_Query( $args );
 			
             if( $loop->have_posts() ){
                 while( $loop->have_posts() ): $loop->the_post(); global $post; 
-                    $adressTitle = get_post_custom_values('wpcf-myos-address-title');
-                    $adressAddress = get_post_custom_values('wpcf-myos-address-address');
-                    $adressMail = get_post_custom_values('wpcf-contact-mail');
+                    $child_pages = types_child_posts("myos-contact-address");
+					foreach ($child_pages as $index => $myos_address) {
+                    
+                    
+                        $adressTitle = $myos_address->fields['myos-address-title'];
+                        $adressAddress = $myos_address->fields['myos-address-address'];
+                        $adressMail = $myos_address->fields['contact-mail'];
     ?>
-        <p><?php echo $adressTitle[0]  ?></p>
-        <p><?php echo $adressAddress[0]  ?></p>
-        <p><?php echo $adressMail[0]  ?></p>
+    <div class="address semi-bold">
+    
+        <p><?php echo $adressTitle ?></p>
+        <p><?php echo $adressAddress  ?></p>
+        <p><?php echo $adressMail  ?></p>
+    </div>
+
     <?php 
                 
-                
+                    }
                 endwhile;
             }
     ?>
 
-    </div>
-
+    
             
