@@ -10,7 +10,7 @@ Template Name: contact
         <div class="semi-bold heading-text">
             <h2>Contact Us</h2>
         </div>
-        <form class="contact-form">
+<!--        <form class="contact-form">
             <div class="form-group form-inline ">
                 <input type="text" class="form-control bordered bottom-bordered" placeholder="Name" id="contact-form-input-name" />
                 <input type="email" class="form-control bordered bottom-bordered" placeholder="Mail-Address" id="contact-form-input-email" />
@@ -19,11 +19,22 @@ Template Name: contact
                 <textarea class="form-control bordered whole-bordered" rows="4" placeholder="Write a Message"></textarea>
             </div>
             <a href="#" class="btn btn-myos-black">Send</a>
-        </form>
+        </form>-->
+<?php        
+
+$content = get_the_content();
+$content = apply_filters( 'the_content', $content );
+$content = str_replace('<br />','',$content);
+echo $content;
+
+//the_content(); 
+
+?> 
+
     </div>
 
 <?php 
-the_content(); 
+//the_content(); 
 ?>
   
             
