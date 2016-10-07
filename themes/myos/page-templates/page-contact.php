@@ -20,21 +20,39 @@ Template Name: contact
             </div>
             <a href="#" class="btn btn-myos-black">Send</a>
         </form>-->
-<?php        
+        <?php        
 
-$content = get_the_content();
-$content = apply_filters( 'the_content', $content );
-$content = str_replace('<br />','',$content);
-echo $content;
+        $content = get_the_content();
+        $content = apply_filters( 'the_content', $content );
+        $content = str_replace('<br />','',$content);
+        echo $content;
+        ?> 
 
-//the_content(); 
-
-?> 
+    </div>
+    <div class="address semi-bold">
+    <?php 
+        $args = array(
+            'post_type' => 'page'
+			);
+			
+			$loop = new WP_Query( $args );
+			
+            if( $loop->have_posts() ){
+                while( $loop->have_posts() ): $loop->the_post(); global $post; 
+                    $adressTitle = get_post_custom_values('wpcf-myos-address-title');
+                    $adressAddress = get_post_custom_values('wpcf-myos-address-address');
+                    $adressMail = get_post_custom_values('wpcf-contact-mail');
+    ?>
+        <p><?php echo $adressTitle[0]  ?></p>
+        <p><?php echo $adressAddress[0]  ?></p>
+        <p><?php echo $adressMail[0]  ?></p>
+    <?php 
+                
+                
+                endwhile;
+            }
+    ?>
 
     </div>
 
-<?php 
-//the_content(); 
-?>
-  
             
