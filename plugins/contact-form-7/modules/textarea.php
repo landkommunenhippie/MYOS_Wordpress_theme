@@ -73,8 +73,8 @@ function wpcf7_textarea_shortcode_handler( $tag ) {
 	$atts = wpcf7_format_atts( $atts );
 
 	$html = sprintf(
-		'<span class="wpcf7-form-control-wrap %1$s"><textarea %2$s>%3$s</textarea>%4$s</span>',
-		sanitize_html_class( $tag->name ), $atts,
+		'<textarea placeholder="%1$s" %2$s>%3$s</textarea>%4$s',
+		str_replace('-',' ',sanitize_html_class( $tag->name )), $atts,
 		esc_textarea( $value ), $validation_error );
 
 	return $html;
