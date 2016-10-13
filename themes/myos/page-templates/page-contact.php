@@ -2,6 +2,7 @@
 /*
 Template Name: contact
 */
+get_header();
 ?>
 
 <div class="spacey" id="contact">

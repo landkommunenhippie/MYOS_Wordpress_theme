@@ -2,7 +2,7 @@
 /*
 Template Name: gallery
 */
-
+get_header();
 ?>
 
 <div class="noisey" id="<?php the_title(); ?>">

@@ -1,3 +1,10 @@
+<?php 
+/*
+Template Name: news-slider
+*/
+get_header();
+?>
+
 <div class="slider-wrapper">
     <div class="image-slider">
         <div id="myos-carousel" class="carousel slide">

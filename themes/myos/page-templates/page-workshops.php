@@ -2,6 +2,7 @@
 /*
 Template Name: workshops
 */
+get_header();
 ?>
 
 <div class="ws" id="workshops">
