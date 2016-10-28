@@ -32,18 +32,20 @@
 	/*
 	GET all SubPageItems With a-Tag
 	*/
-	$newsPage = get_page_by_title( 'news' );					
+	$newsPage = get_page_by_title( 'news' );
+	$contactPage = get_page_by_title( 'contact' );					
 	$pages = wp_list_pages(array(
 		'echo' => 0, 
 		'child_of' => get_option('page_on_front'), 
 		'title_li' => null,
 		'sort-column' => 'menu_order',
-		'exclude' => $newsPage->ID
+		'exclude' => $newsPage->ID.",".$contactPage->ID
 		)
 	);
 	$pagesWithoutListTags = strip_tags($pages, '<a>');
 	$pageArr = preg_split("/\n/",$pagesWithoutListTags, -1 ,PREG_SPLIT_NO_EMPTY);
-	array_push($pageArr,'<a href="#">BOOK NOW</a>');
+	array_push($pageArr,'<a href="#contact">contact</a>');
+	array_push($pageArr,'<a href="#contact">BOOK NOW</a>');
 	
 	/*
 	Split Nav Items with Meridian
@@ -118,7 +120,7 @@
 						?>
 						<li><a>|</a></li>
 						<li><a class="regular-link" href="#">#MYOS</a></li>
-						<li><a class="regular-link" href="#">f</a></li>
+						<li><a class="regular-link" style="text-transform:lowercase;" href="#">f</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</nav><!-- /main-Nav -->
