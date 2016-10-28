@@ -1,0 +1,11 @@
+.single-news p {
+    overflow:hidden;
+    max-width: 620px ;
+    margin: auto ;
+}
+
+.single-news p:first-child {
+    max-width:1150px;
+}
+
+

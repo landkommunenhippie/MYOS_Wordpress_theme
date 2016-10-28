@@ -673,3 +673,57 @@ FOOTER
     line-height: 24px;
     text-shadow:  0px 2px 4px rgb(0,0,69);
 }
+
+/**
+Page Detial
+*/
+
+.detail-content ul{
+    padding-left: 14px;
+}
+
+.single-news p {
+    overflow:hidden;
+    max-width: 620px ;
+    margin: auto ;
+}
+
+.single-news p:first-child {
+    max-width:1150px;
+}
+
+.detail-content.blue .gdc_row{
+    background-color: #B6F2E3;
+    border: 2px solid #333333;
+    max-width: 780px;
+    margin: auto;
+}
+
+.detail-content.blue .gdc_row:first-child{
+    background-color: transparent;
+    border: none;
+    max-width: 400px;
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+
+.detail-content.blue .gdc_row:first-child img{
+    width: 100%;
+    height: 100%;
+}
+
+.detail-content.blue p, .detail-content.blue h3{
+    max-width: 660px;
+    margin: auto 80px;
+}
+.detail-content.blue h3{
+    margin-top: 50px;
+}
+
+.detail-content.blue h3:first-child{
+    margin-top: 100px;
+}
+
+.detail-content.blue p:last-child{
+    margin-bottom: 100px;
+}
