@@ -678,8 +678,19 @@ FOOTER
 Page Detial
 */
 
+.detail-content{
+    max-width: 950px;
+    margin:auto;
+}
+.detail-content > p{
+    max-width:620px;
+    margin:auto;
+}
+
 .detail-content ul{
     padding-left: 14px;
+    max-width:620px;
+    margin:auto;
 }
 
 .single-news p {
