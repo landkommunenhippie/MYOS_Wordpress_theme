@@ -10,7 +10,7 @@ Template Name: about
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Headline_about.png" alt="about" />
         </div>
         
-	<h4><?php the_content()?></h4>
+	<?php the_content()?>
             
 
 		<div class="grid myos-profile">

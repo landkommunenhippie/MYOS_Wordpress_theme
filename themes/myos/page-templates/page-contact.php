@@ -51,7 +51,7 @@ get_header();
     
         <p><?php echo $adressTitle ?></p>
         <p><?php echo $adressAddress  ?></p>
-        <p><?php echo $adressMail  ?></p>
+        <p><a href="mailto:<?php echo $adressMail  ?>"><?php echo $adressMail  ?></a></p>
     </div>
 
     <?php 

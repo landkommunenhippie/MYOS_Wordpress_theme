@@ -1,0 +1,7 @@
+@media screen and (max-width: 1200px) {
+   .container-fluid > .slider-wrapper{
+       margin-left: 24px;
+       margin-right: 24px;
+    }
+}
+

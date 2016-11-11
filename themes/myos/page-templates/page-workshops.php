@@ -49,7 +49,7 @@ get_header();
                                     <?php echo $wsShortDesctiption ?>
                                 </div>
                                 
-                                <a href="#" class="btn btn-myos-black">Book Now</a>
+                                <a href="#contact" class="btn btn-myos-black">Book Now</a>
 
                             </div>
                             

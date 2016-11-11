@@ -19,6 +19,46 @@ body{
     
 }
 
+.tablet-brand, .tablet-visible{
+    display:none;
+}
+
+
+a:link{
+    text-decoration: underline;
+    color: inherit;
+}
+
+a:visited{
+    color:inherit;
+}
+.btn-myos-black:visited{
+    color: white;
+}
+a.btn{
+    text-decoration: none;
+}
+a:hover{
+    transition: all 0.25s ease;
+    opacity: 0.5;
+}
+a.btn:hover{
+    transition: all 0.25s ease;
+    opacity: 1;
+}
+
+h2{
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+
+h3{
+    font-family: "WorkSans";
+    line-height: 32px;
+    font-size: 24px;
+}
+
 h4{
     font-family: "WorkSans-SemiBold";
     max-width:700px;
@@ -27,6 +67,10 @@ h4{
     font-size: 24px;
     letter-spacing: 0.2px;
     line-height: 28px;
+}
+
+.detail-content > h4{
+    margin-bottom: 30px;
 }
 
 h5{
@@ -110,10 +154,10 @@ h5{
     line-height: 19px;
 }
 .btn-myos-transparent:hover{
-    background-color: #333;
+    transition: all 0.25s ease;
+    background-color:#333;
     color: #FFF;
 }
-
 
 /**
 * ---- Main Navigation ---
@@ -137,9 +181,11 @@ h5{
 }
 .navbar .navbar-nav > li > a{
     color: #333;
+    text-decoration: none;
 }
 
 .navbar .navbar-nav > li > a:hover{
+    transition: all 0.25s ease;
     background: transparent;
 }
 .navbar-brand {
@@ -162,12 +208,19 @@ h5{
 width: 255px;
 margin: auto;
 }
+.brand > a:hover{
+    opacity: 1;
+}
 .small-brand{
     width: 190px;
     margin: auto;
+    
 }
-.brand > img{
-    width:100%;
+.small-brand  img{
+    height:85px;
+}
+.brand  img{
+   width: 100%;
 }
 
 .heading{
@@ -221,7 +274,7 @@ margin: auto;
 .slider-wrapper{
    
    max-height:600px;
-    margin-bottom: 100px;
+   margin-bottom: 100px;
 }
 .image-slider{
     height:530px;
@@ -286,12 +339,31 @@ margin: auto;
     line-height: 19px;
     width:200px;
     height:60px;
+    border-color: #444;
+    border-radius: 0;
+    border-width: 2px;
+    
+}
+
+
+.btn-myos-black:link{
+    color:white;
+}
+
+.btn-myos-black:visited{
+    color:white;
 }
 
 .btn-myos-black:hover{
-    background-color: #FFF;
+    
+    transition: all 0.25s ease;
+    background-color:transparent;
     color: #333;
     opacity: 1;
+}
+
+.carousel-caption .btn-myos-black:hover{
+    background-color: white;
 }
 
 .carousel-caption{
@@ -390,15 +462,6 @@ margin: auto;
     margin-top:20px;
 }
 
-.instagram > a{
-    color: #333;
-    text-decoration: underline;
-}
-
-a:hover{
-    opacity: 0.5;
-}
-
 .myos-profile .profile-picture.right{
     float:right;
     margin-right: 150px;
@@ -466,7 +529,7 @@ img-responsive {
 .offer{
     max-width:380px;
     border: 2px solid #333333;
-    background-color: #FEFC55;
+    background-color: #fef57c;
     text-align:center;
    
 }
@@ -564,7 +627,7 @@ img-responsive {
 * GET in TOUCH
 */
 .container-fluid > .spacey{
-    background-image: url('../images/background_space.png');
+    background-image: url('../images/background_space_aufgehellt.png');
     background-repeat: repeat;
     overflow:hidden;
     max-width: 100%;
@@ -667,7 +730,7 @@ img-responsive {
 FOOTER
 */
 .footer{
-    margin: 95px auto 0;
+    margin: 95px auto 15px;
     max-width: 1000px;
     letter-spacing: 0.1px;
     line-height: 24px;
@@ -693,15 +756,48 @@ Page Detial
     margin:auto;
 }
 
-.single-news p {
+.single-news p, .single-news .wp-caption, .single-news h1, .single-news h2, .single-news h3, .single-news h4, .single-news h5, .single-news h6
+{
     overflow:hidden;
-    max-width: 620px ;
-    margin: auto ;
+    max-width: 620px;
+    margin: auto;
 }
 
-.single-news p:first-child {
+.wp-caption-text{
+    font-family: "WorkSans";
+    font-size: 12px;
+}
+
+.detail-content p > a > img, .detail-content p > img, .single-news .wp-caption{
+    margin-top: 100px;
+    margin-bottom: 70px;
+} 
+
+.detail-content p > a > img.no-margin, .detail-content p > img.no-margin{
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
+
+.single-news h1, .single-news h2, .single-news h3, .single-news h4, .single-news h5, .single-news h6
+{
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.single-news > p:first-child {
     max-width:1150px;
 }
+
+.single-news > p:first-child > a > img, .single-news > p:first-child > img{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0px;
+}
+
+.detail-content .gdc_row{
+    margin-top: 100px;
+}
+
 
 .detail-content.blue .gdc_row{
     background-color: #B6F2E3;
@@ -723,10 +819,15 @@ Page Detial
     height: 100%;
 }
 
+.detail-content.blue .gdc_row:first-child p {
+    margin: 0 0 ;
+}
+
 .detail-content.blue p, .detail-content.blue h3{
     max-width: 660px;
     margin: auto 80px;
 }
+
 .detail-content.blue h3{
     margin-top: 50px;
 }

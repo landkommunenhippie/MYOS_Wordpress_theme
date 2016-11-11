@@ -40,6 +40,6 @@ get_header();
             ?>
         </div>
         
-        <div class="btn-myos-center"><a href="#" class="btn btn-myos-transparent">Load More</a></div>
+        <div class="btn-myos-center"><a href="<?php echo get_permalink(get_page_by_title("Gallery-Detail", OBJECT)); ?>" class="btn btn-myos-transparent">Load More</a></div>
 </div>
 

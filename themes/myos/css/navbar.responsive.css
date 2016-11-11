@@ -1,0 +1,89 @@
+@media screen and (max-width: 990px) {
+    no-resp{
+        display: none;
+    }
+    .main-nav{
+        margin-top:-25px;
+        padding: 0;
+    }
+    .tablet-brand{
+        display:block;
+        text-align: center;
+        padding: 25px;
+        position: absolute;
+        width: 100%;
+        margin-bottom: 25px;
+        overflow: hidden;
+        
+    }
+    .navbar-toggle{
+        position: absolute;
+        right: 24px;
+        top: 150px;
+    }
+    .tablet-brand > a > img{
+        width: 255px;
+    }
+    .collapse.in{
+        background-image: url('../images/background_space_aufgehellt.png');
+        background-repeat: repeat;
+        overflow:hidden;
+        max-width: 100%;
+        background-size:800px;
+        text-align: center;
+        margin-top:240px; 
+        padding-top: 120px;
+        padding-bottom: 120px; 
+    }
+    .collapse.in > .navbar-nav > li > a{
+        color: #FFF;
+
+    }
+
+    
+    .collapse.in > .navbar-right > li:nth-last-child(-n+3){
+        display: none;
+    }
+
+    .collapse.in > * {
+        max-width: 130px;
+        margin: auto;
+    }
+    .collapse.in hr{
+        margin:20px auto;
+    }
+    .collapse.in .regular-link{
+    color: white;
+}
+
+    .collapse.in .outer-links > a:first-child{
+        float:left;
+    }
+    .collapse.in .outer-links > a:last-child{
+        float: right;
+    }
+
+    .collapse.in .tablet-visible{
+        display: block;
+    }
+
+    .no-transition {
+        -webkit-transition: height 0.01s;
+        -moz-transition: height 0.01s;
+        -ms-transition: height 0.01s;
+        -o-transition: height 0.01s;
+        transition: height 0.01s;
+    }
+    .navbar-brand{
+        display: none;    
+    }
+
+    #navbar-collapse-mobile{
+        height:200px;
+        display: none;
+    }
+
+    .slider-wrapper{
+        margin-top: 120px;
+    }
+}
