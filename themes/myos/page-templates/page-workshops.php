@@ -33,7 +33,7 @@ get_header();
                             
                             <?php if($index % 2 != 0) {?>
                             <div class="ws-offer-divider"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/divider.png" alt="next offer" /> </div>
-                            <div class="col-sm-6 ws-description">
+                            <div class="col-sm-6 ws-description tablet-invisible">
                                 <?php echo $myos_workshop->post_content; ?>
                             </div>     
                             <?php }?>
@@ -49,7 +49,7 @@ get_header();
                                     <?php echo $wsShortDesctiption ?>
                                 </div>
                                 
-                                <a href="#contact" class="btn btn-myos-black">Book Now</a>
+                                <a href="#contact" class="tablet-invisible btn btn-myos-black">Book Now</a>
 
                             </div>
                             
@@ -57,9 +57,16 @@ get_header();
                             
                             <div class="col-sm-6 ws-description">
                                 <?php echo $myos_workshop->post_content; ?>
-                            </div>
+														</div>
+
+                            <?php }?>
+                            <?php if($index % 2 != 0) {?>
+                            <div class="col-sm-6 ws-description tablet-visible">
+                                <?php echo $myos_workshop->post_content; ?>
+                            </div>     
                             <?php }?>
                             
+                               <div class="btn-myos-center tablet-visible"> <a href="#contact" class="btn btn-myos-black">Book Now</a></div>
                         </div>
         <?php       
                     }

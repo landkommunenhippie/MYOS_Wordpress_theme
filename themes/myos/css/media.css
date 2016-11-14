@@ -1,13 +1,185 @@
 @media screen and (max-width: 1200px) {
-   .container-fluid > div{
+   
+    .tablet-visible{
+        display: block;
+    }
+   .tablet-invisible{
+       display: none;
+   }
+    
+    h4{
+     max-width: 350px;
+     margin-bottom: 20px;
+    }
+    .btn-myos-center{
+        margin-top: 40px;
+    }
+
+    .grid{
+        max-width: 350px;
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom:20px; 
+    }
+
+    .heading > img{
+        width: 250px;
+    }
+
+
+   .container-fluid > .slider-wrapper{
        margin-left: 24px;
        margin-right: 24px;
     }
+
+    .container-fluid > div + .noisey{
+        padding-top: 30px;
+    }
+
+		.container-fluid > div.noisey + div{
+			padding-top:30px;
+		}
+
+    .container-fluid > div{
+        padding-bottom: 40px;
+    }
+
+
+    .myos-profile{
+        overflow: visible;
+    }
+    .profile-picture {
+        padding-bottom: 20px;
+    }
+
+    .myos-profile > .row > div{
+        padding: 0;
+    }
+
+    .myos-profile > .row:nth-child(2n) > .upright{
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+		.profile-description{
+			max-width:350px;
+		}
+
+    .profile-description.right{
+        padding-top:0!IMPORTANT;
+    }
+
+    .profile-description.left{
+        margin-left: 0;
+        padding-top:0!IMPORTANT;
+    }
+
+    .gallery-grid{
+        max-width:350px;
+    }
+
+    .offer + .ws-description{
+        padding-left: 0;
+    }
+
+		.ws > .grid > .row{
+				margin-bottom:40px;
+		}
+		
+		.ws-offer-divider{
+				padding-left:0;
+				text-align:center;
+				margin-bottom:40px;
+		}
+
+		.contact-badge{
+			position:relative;
+			margin:20px auto 20px auto;
+			left:0;
+			top:0;
+		}
+
+		.contact-box{
+			max-width:350px;
+			margin:20px auto 0 auto;
+		}	
+		.contact-box  h4{
+			text-align:left;
+			margin:30px;
+		}
+	
+		.wpcf7{
+			margin:30px!IMPORTANT;
+		}	
+
+		.contact-form > .form-group  input:nth-child(even)   {
+   	 	margin: 0px 0 0px 0px;
+		}
+
+		.contact-form > .form-group input{
+			width:100%;
+		}
+
+		.footer{
+			margin-top:30px;
+		}
+		.footer.grid{
+			text-align:center
+		}
+		.footer.grid .row{
+			margin-bottom:30px;
+		}
 }
 
 @media screen and (max-width: 500px) {
+		.tablet-brand > a >  img {
+			width: 100px;
+		}
     .heading > img{
         width: 190px;
     }
 
+		.slider-wrapper{
+			margin-top:-10px;
+		}
+
+		.main-nav{
+			margin-bottom:0px;
+		}
+
+		.navbar-toggle{
+			top:50px;
+		}
+		.collapse.in{
+			margin-top:110px;
+		}
+
+    h4{
+     max-width: 272px;
+    }
+    .grid{
+        max-width: 272px;
+    }
+    .gallery-grid{
+        max-width:272px;
+    }
+		.contact-box{
+			max-width:272px;
+			margin:20px auto 0 auto;
+		}	
+		.profile-picture{
+			width: 272px;
+		}
+		.myos-profile .profile-description{
+			max-width:272px;
+		}
+		.upright{
+			height: auto;
+		}
+		.image-slider{
+			height:272px;
+		}
+    
 }

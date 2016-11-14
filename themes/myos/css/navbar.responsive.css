@@ -63,10 +63,6 @@
         float: right;
     }
 
-    .collapse.in .tablet-visible{
-        display: block;
-    }
-
     .no-transition {
         -webkit-transition: height 0.01s;
         -moz-transition: height 0.01s;

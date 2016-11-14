@@ -13,8 +13,8 @@
 	
 	<link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap/bootstrap.css">
 	<link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css">
-	<link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/media.css">
 	<link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/navbar.responsive.css">
+	<link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/media.css">
 	
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.min.js"></script>
