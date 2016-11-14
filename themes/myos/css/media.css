@@ -1,7 +1,13 @@
 @media screen and (max-width: 1200px) {
-   .container-fluid > .slider-wrapper{
+   .container-fluid > div{
        margin-left: 24px;
        margin-right: 24px;
     }
 }
 
+@media screen and (max-width: 500px) {
+    .heading > img{
+        width: 190px;
+    }
+
+}
