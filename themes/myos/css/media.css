@@ -140,9 +140,10 @@
     .heading > img{
         width: 190px;
     }
-
-		.slider-wrapper{
-			margin-top:-10px;
+		.btn{
+			width:175px;
+			height:50px;
+			padding:15px 0;
 		}
 
 		.main-nav{
@@ -158,10 +159,31 @@
 
     h4{
      max-width: 272px;
+		 font-size: 18px;
+		 line-height:24px;
     }
+		h5{
+			font-size:18px;
+			letter-spacing:0.2px;
+			line-height:22px;
+		}
     .grid{
         max-width: 272px;
     }
+
+		.slider-wrapper{
+			margin-top:-10px;
+			margin-bottom:80px;
+		}
+		.carousel-caption{
+			bottom:38px;
+		}
+
+		.slider-heading{
+			font-size: 24px;
+			letter-spacing:0.4px;
+		}
+
     .gallery-grid{
         max-width:272px;
     }
@@ -169,6 +191,11 @@
 			max-width:272px;
 			margin:20px auto 0 auto;
 		}	
+		.profile-heading{
+			font-size: 24px;
+			letter-spacing:0.9px;
+			line-height: 70px;
+		}
 		.profile-picture{
 			width: 272px;
 		}
@@ -180,6 +207,20 @@
 		}
 		.image-slider{
 			height:272px;
+		}
+
+		.offer > h3{
+			font-size:24px;
+			letter-spacing:0.9px;
+			line-height: 32px;
+		}
+		.hardfacts .time .number{
+			font-size:20px;
+		}
+		.offer > .offer-description{
+			font-size:14px;
+			line-height:22px;
+			letter-spacing:0.1px;
 		}
     
 }
