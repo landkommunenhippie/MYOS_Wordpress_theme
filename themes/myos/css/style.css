@@ -733,13 +733,20 @@ FOOTER
     margin: 95px auto 15px;
     max-width: 1000px;
     letter-spacing: 0.1px;
-    line-height: 24px;
+    line-height: 35px;
     text-shadow:  0px 2px 4px rgb(0,0,69);
 }
 
 .footer a {
 	text-decoration:none;
 
+}
+
+.footer .row div{
+	text-align:right;
+}
+.footer .row div:first-child{
+	text-align:left;
 }
 
 /**

@@ -6,6 +6,11 @@
    .tablet-invisible{
        display: none;
    }
+
+	 .divider-image{
+	 	margin-top:40px!IMPORTANT;
+		margin-bottom:40px!IMPORTANT;
+	 }
     
     h4{
      max-width: 350px;
@@ -104,10 +109,19 @@
 		.contact-box{
 			max-width:350px;
 			margin:20px auto 0 auto;
+			padding-top:20px;
+			padding-bottom:20px;
 		}	
 		.contact-box  h4{
 			text-align:left;
 			margin:30px;
+		}
+
+		.footer .row div{
+			text-align:center;
+		}
+		.footer .row div:first-child{
+			text-align:center;
 		}
 	
 		.wpcf7{
@@ -131,6 +145,36 @@
 		.footer.grid .row{
 			margin-bottom:30px;
 		}
+
+
+
+
+		.detail-content{
+			width:350px;
+		}
+
+		.detail-content.blue h3{
+			margin-top:30px;
+		}
+		
+		.detail-content img{
+			max-width:350px;
+			height:auto;
+		}
+		
+		.detail-content .gdc_row{
+			margin-top:20px;
+		}
+		.gdc_column{
+			float:none!IMPORTANT;
+		}
+
+		.gdc_chalf{
+			width:100%!IMPORTANT;
+		}
+		.gdc_inner{
+			padding-left:0!IMPORTANT;
+		}
 }
 
 @media screen and (max-width: 500px) {
@@ -148,6 +192,7 @@
 
 		.main-nav{
 			margin-bottom:0px;
+			margin-top:0px;
 		}
 
 		.navbar-toggle{
@@ -155,6 +200,12 @@
 		}
 		.collapse.in{
 			margin-top:110px;
+		}
+
+		h3{
+			font-size:24px;
+			letter-spacing:0.2px;
+			line-height:28px;
 		}
 
     h4{
@@ -177,6 +228,7 @@
 		}
 		.carousel-caption{
 			bottom:38px;
+			width:200px;
 		}
 
 		.slider-heading{
@@ -221,6 +273,38 @@
 			font-size:14px;
 			line-height:22px;
 			letter-spacing:0.1px;
+		}
+
+		.contact-badge{
+			width:250px;
+		}
+
+
+		.detail-content{
+			width:272px;
+		}
+
+		.detail-content img{
+			max-width:272px;
+		}
+
+		.detail-content.blue p, .detail-content.blue h3{
+			margin-left: 30px;
+			margin-right:30px;
+		}
+		.heading-image{
+			width:190px;
+		}
+
+		.detail-content.blue .gdc_row:first-child{
+			margin-top:55px;
+			margin-bottom:55px;
+		}
+		.detail-content.blue h3:first-child{
+			margin-top:30px;
+		}
+		.detail-content.blue p:last-child{
+			margin-bottom:30px;
 		}
     
 }
