@@ -38,10 +38,10 @@ Template Name: about
 				 	
                     
 				 <?php if($imageIsLeft){?>
-					<div class="col-sm-12 col-md-6 upright">
+					<div class="col-sm-12 col-md-12 col-lg-6 upright">
                          <img class="profile-picture " src="<?php echo $profileImageLoc; ?>" alt="Profile of Ryslee" />
 					</div>
-					 <div class="profile-description right col-sm-12 col-md-6">
+					 <div class="profile-description right col-sm-12 col-md-12 col-lg-6">
                         <div class="profile-heading semi-bold"><?php echo $profileName ?></div>
                         <p class="semi-bold"><?php echo $myos_profile->post_content; ?></p>
                         <p class="instagram"><a href="<?php echo $instagramURL ?>" target="_blank">Instagram</a></p>
@@ -50,15 +50,15 @@ Template Name: about
                  
 				<?php } else{ ?>
 				 
-				     <div class="tablet-invisible  profile-description left col-sm-12 col-md-6">
+				     <div class="tablet-lg-invisible  profile-description left col-sm-12 col-md-12 col-lg-6">
                         <div class="profile-heading semi-bold"><?php echo $profileName ?></div>
                         <p class="semi-bold"><?php echo $myos_profile->post_content; ?></p>
                         <p class="instagram"><a href="<?php echo $instagramURL ?>" target="_blank">Instagram</a></p>
                     </div>
-					<div class="col-sm-12 col-md-6 upright">
+					<div class="col-sm-12 col-md-12 col-lg-6 upright">
                          <img class="profile-picture " src="<?php echo $profileImageLoc; ?>" alt="Profile of Ryslee" />
                     </div>
-					<div class=" tablet-visible profile-description left col-sm-12 col-md-6">
+					<div class=" tablet-lg-visible profile-description left col-sm-12 col-md-12 col-lg-6">
                         <div class="profile-heading semi-bold"><?php echo $profileName ?></div>
                         <p class="semi-bold"><?php echo $myos_profile->post_content; ?></p>
                         <p class="instagram"><a href="<?php echo $instagramURL ?>" target="_blank">Instagram</a></p>

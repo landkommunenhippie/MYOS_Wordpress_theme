@@ -61,7 +61,7 @@
 	//var_dump($rightSideNavItems);
 
 ?>
-		<div class="fixed-nav" id="fixed-nav">
+		<div class="fixed-nav tablet-invisible" id="fixed-nav">
             <div class="navbar navbar-fixed-top bold">
                 <div class="collapse navbar-collapse" id="fixed-navbar-collapse-1">
                     <div class="navbar-center navbar-brand" href="#">
@@ -142,9 +142,9 @@
 						<li><a class="regular-link" style="text-transform:lowercase;" target="_blank" href=" https://www.facebook.com/MakeYourOwnSign/">f</a></li>
 					</ul>
 					<hr class="tablet-visible">
-					<div class="outer-links">
-						<a class="tablet-visible regular-link" href="#">#MYOS</a>
-						<a class="tablet-visible regular-link" style="text-transform:lowercase;" target="_blank" href=" https://www.facebook.com/MakeYourOwnSign/">f</a>
+					<div class="outer-links tablet-visible">
+						<a class="regular-link" href="#">#MYOS</a>
+						<a class="regular-link" style="text-transform:lowercase;" target="_blank" href=" https://www.facebook.com/MakeYourOwnSign/">f</a>
 					</div>
 				</div><!-- /.navbar-collapse -->
 			</nav><!-- /main-Nav -->

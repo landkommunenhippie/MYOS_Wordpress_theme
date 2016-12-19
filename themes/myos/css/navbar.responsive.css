@@ -33,7 +33,9 @@
         text-align: center;
         margin-top:240px; 
         padding-top: 120px;
-        padding-bottom: 120px; 
+        padding-bottom: 120px;
+		height: 100vh;
+		padding-top: 25vh;
     }
     .collapse.in > .navbar-nav > li > a{
         color: #FFF;
@@ -42,10 +44,10 @@
 		.navbar-nav{
 			font-size:20px;
 			letter-spacing:2px;
-			line-height:45px;
+			line-height:50px;
 		}
 		.navbar-left{
-			margin-top:-50px;
+			/*margin-top:-50px!IMPORTANT;*/
 		}
 
     

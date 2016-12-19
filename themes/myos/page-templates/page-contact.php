@@ -6,12 +6,12 @@ get_header();
 ?>
 
 <div class="spacey" id="contact">
-		<div class="contact-badge tablet-visible"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Badge_BOOKNOW.png" /></div>
+		<div class="contact-badge tablet-lg-visible"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Badge_BOOKNOW.png" /></div>
     <div class="contact-box">
-        <div class="contact-badge tablet-invisible"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Badge_BOOKNOW.png" /></div>
+        <div class="contact-badge tablet-lg-invisible"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Badge_BOOKNOW.png" /></div>
         <div class="semi-bold heading-text">
-            <h2 class="tablet-invisible">Contact Us</h2>
-            <h4 class="tablet-visible">Contact Us</h4>
+            <h2 class="tablet-lg-invisible">Contact Us</h2>
+            <h4 class="tablet-lg-visible">Contact Us</h4>
         </div>
 <!--        <form class="contact-form">
             <div class="form-group form-inline ">

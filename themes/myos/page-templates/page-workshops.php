@@ -33,12 +33,12 @@ get_header();
                             
                             <?php if($index % 2 != 0) {?>
                             <div class="ws-offer-divider"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/divider.png" alt="next offer" /> </div>
-                            <div class="col-sm-6 ws-description tablet-invisible">
+                            <div class="col-lg-6 col-md-12 col-sm-12 ws-description tablet-lg-invisible">
                                 <?php echo $myos_workshop->post_content; ?>
                             </div>     
                             <?php }?>
                             
-                            <div class="col-sm-6 offer">
+                            <div class="col-lg-6 col-md-12 col-sm-12 offer">
                                 <h3 class="semi-bold"><?php echo $wsTitle ?></h3>
                                 <div class="hardfacts">
                                     <p class="surface"><?php echo $itemSurface ?></p>
@@ -49,24 +49,24 @@ get_header();
                                     <?php echo $wsShortDesctiption ?>
                                 </div>
                                 
-                                <a href="#contact" class="tablet-invisible btn btn-myos-black">Book Now</a>
+                                <a href="#contact" class="tablet-lg-invisible btn btn-myos-black">Book Now</a>
 
                             </div>
                             
                             <?php if($index % 2 == 0) {?>
                             
-                            <div class="col-sm-6 ws-description">
+                            <div class="col-lg-6 col-md-12 col-sm-12 ws-description">
                                 <?php echo $myos_workshop->post_content; ?>
 														</div>
 
                             <?php }?>
                             <?php if($index % 2 != 0) {?>
-                            <div class="col-sm-6 ws-description tablet-visible">
+                            <div class=".col-lg-6 col-md-12 col-sm-12 ws-description tablet-lg-visible">
                                 <?php echo $myos_workshop->post_content; ?>
                             </div>     
                             <?php }?>
                             
-                               <div class="btn-myos-center tablet-visible"> <a href="#contact" class="btn btn-myos-black">Book Now</a></div>
+                               <div class="btn-myos-center tablet-lg-visible"> <a href="#contact" class="btn btn-myos-black">Book Now</a></div>
                         </div>
         <?php       
                     }
