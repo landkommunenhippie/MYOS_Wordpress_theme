@@ -7,7 +7,7 @@ get_header();
 
 <div class="slider-wrapper">
     <div class="image-slider">
-        <div id="myos-carousel" class="carousel slide">
+        <div id="myos-carousel" class="carousel slide" data-interval="5000" data-ride="carousel">
         <!-- Indicators -->
         
         <!-- Wrapper for Slides -->
