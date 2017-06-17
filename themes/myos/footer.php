@@ -13,7 +13,7 @@ $imprint = get_page_by_title("imprint", OBJECT);
 				<div class="col-lg-1 col-md-12 col-sm-12"><a href="<?php echo get_post_permalink($imprint->ID) ?>">Imprint</a></div>
 				<div class="col-lg-1 col-md-12 col-sm-12"><a href="<?php echo get_post_permalink($imprint->ID) ?>">Privacy</a></div>
 				<div class="col-lg-1 col-md-12 col-sm-12"><a target="_blank" href="https://www.facebook.com/MakeYourOwnSign/">Facebook</a></div>
-				<div class="col-lg-1 col-md-12 col-sm-12"><a href="#">#MYOS</a></div>
+				<div class="col-lg-1 col-md-12 col-sm-12"><a style="text-transform:lowercase;" target="_blank" href="https://www.instagram.com/explore/tags/myosberlin/">#myosberlin</a></div>
 			</div>
 			<div class="row tablet-visible">
 				<div class="col-md-12">&#169; <?php echo date('Y'); ?>  MYOS Workshops</div>

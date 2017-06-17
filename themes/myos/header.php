@@ -47,15 +47,15 @@
 	);
 	$pagesWithoutListTags = strip_tags($pages, '<a>');
 	$pageArr = preg_split("/\n/",$pagesWithoutListTags, -1 ,PREG_SPLIT_NO_EMPTY);
-	array_push($pageArr,'<a href="#contact">contact</a>');
+	//array_push($pageArr,'<a href="#contact">contact</a>');
 	array_push($pageArr,'<a href="#contact">BOOK NOW</a>');
 	
 	/*
 	Split Nav Items with Meridian
 	*/
 	$navMedian = ceil(sizeof($pageArr) / 2); 
-	$leftSideNavItems = array_slice($pageArr, 0, $navMedian);
-	$rightSideNavItems = array_slice($pageArr, $navMedian);
+	$leftSideNavItems = array_slice($pageArr, 0, $navMedian + 1);
+	$rightSideNavItems = array_slice($pageArr, $navMedian + 1);
 	
 	//var_dump($leftSideNavItems);
 	//var_dump($rightSideNavItems);
@@ -82,7 +82,7 @@
 						?>
 						
 						<li><a>|</a></li>
-						<li><a class="regular-link" href="#">#MYOS</a></li>
+						<li><a class="regular-link" style="text-transform:lowercase;" target="_blank" href="https://www.instagram.com/explore/tags/myosberlin/">#myosberlin</a></li>
 						<li><a class="regular-link"  style="text-transform:lowercase;"  target="_blank" href=" https://www.facebook.com/MakeYourOwnSign/">f</a></li>
 					</ul>
 					</div>
@@ -138,12 +138,12 @@
 						}
 						?>
 						<li><a>|</a></li>
-						<li><a class="regular-link" href="#">#MYOS</a></li>
+						<li><a class="regular-link" style="text-transform:lowercase;" target="_blank" href="https://www.instagram.com/explore/tags/myosberlin/">#myosberlin</a></li>
 						<li><a class="regular-link" style="text-transform:lowercase;" target="_blank" href=" https://www.facebook.com/MakeYourOwnSign/">f</a></li>
 					</ul>
 					<hr class="tablet-visible">
 					<div class="outer-links tablet-visible">
-						<a class="regular-link" href="#">#MYOS</a>
+						<a class="regular-link" style="text-transform:lowercase;" target="_blank" href="https://www.instagram.com/explore/tags/myosberlin/">#myosberlin</a>
 						<a class="regular-link" style="text-transform:lowercase;" target="_blank" href=" https://www.facebook.com/MakeYourOwnSign/">f</a>
 					</div>
 				</div><!-- /.navbar-collapse -->
